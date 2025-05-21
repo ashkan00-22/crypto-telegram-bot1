@@ -1,0 +1,13 @@
+
+services:
+  - type: web
+    name: crypto-telegram-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    envVars:
+      - key: TOKEN
+        value: "8102585508:AAHNUBMDqv6HU8Ki6ZiRAr2RtUQqsgYcl78"
+      - key: CHANNEL_ID
+        value: "@RateRadar24"
+    autoDeploy: false
